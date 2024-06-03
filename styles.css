@@ -1,0 +1,23 @@
+#hideMeAfter3Seconds {
+    animation: hideAnimation 0s ease-in 3s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes hideAnimation {
+    to {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  html{
+    background-color:#f9fafb;
+  }
+
+
+  @media (prefers-color-scheme: dark) {
+    html {
+        background-color: #111827;
+    }
+}
